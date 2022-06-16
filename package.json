@@ -1,0 +1,29 @@
+{
+  "name": "SpaceSolar",
+  "version": "1.0.0",
+  "description": "Space project - Solar system",
+  "main": "index.js",
+  "author": "Jayson Yee",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-syntax-bigint": "^7.8.3",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "@babel/types": "^7.15.4",
+    "babel-plugin-transform-exponentiation-operator": "^6.24.1",
+    "babel-plugin-transform-jsbi-to-bigint": "^1.4.0",
+    "mocha": "^8.1.3",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "serve": "nodemon dist/index.js",
+    "start": "npm run build && nodemon dist/index.js"
+  }
+}
